@@ -1,0 +1,66 @@
+.nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  margin-left: 10px;
+  padding: 5px;
+  z-index: 2;
+  position: fixed;
+  transform: translateY(-80%);
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(4px); /*Filtro para o que se vê por debaixo de um elemento*/
+}
+
+.nav a {
+  background: transparent;
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.768);
+  font-size: 1.1rem;
+  direction: none;
+  display: flex;
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .nav {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    gap: 2rem;
+  }
+  
+  .nav a {
+    font-size: 1.1rem;
+    padding: 0.7rem;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .nav {
+    padding: 5px;
+    left: 47%;
+    position: fixed;
+  }
+
+  .nav a {
+    padding: 0.7rem;
+  }
+}

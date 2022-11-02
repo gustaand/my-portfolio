@@ -1,0 +1,91 @@
+.sol-icon:hover {
+  color: rgb(0, 0, 0);
+}
+
+.game-icon:hover {
+  color: rgb(39, 154, 255);
+}
+
+.chess-icon:hover {
+  color: rgb(121, 123, 255);
+}
+
+.table-icon:hover {
+  color: rgb(4, 251, 28);
+}
+
+.dnd-icon:hover {
+  color: rgb(252, 58, 58);
+}
+
+.stk-icon:hover {
+  color: rgb(0, 124, 158);
+}
+
+.rover-icon:hover {
+  color: rgb(232, 45, 213);
+}
+
+.bskt-icon:hover {
+  color: rgb(255, 102, 0);
+}
+
+.ptn-icon:hover {
+  color: rgb(0, 221, 255);
+}
+
+.mv-icon:hover {
+  color: rgb(151, 103, 206);
+}
+
+.design-icon:hover {
+  color: rgb(134, 134, 134);
+}
+
+.trvl-icon:hover {
+  color: rgb(0, 140, 255);
+}
+
+.icon-off {
+  display: none;
+}
+
+.text-icon{
+  font-size: 15px;
+  animation: on 400ms linear;
+  cursor: pointer;
+}
+
+.text-icon:hover{
+  color: rgb(0, 255, 251);
+  transition: all 150ms ease;
+}
+
+.text-icon:active {
+  transform: scale(0.8);
+  transition: all 200ms ease;
+}
+
+.text-off{
+  display: none;
+}
+
+.icon-on {
+  animation: on 400ms linear;
+  cursor: pointer;
+  transition: all 150ms linear;
+}
+
+.icon-on:hover {
+  transform: scale(1.11);
+}
+
+.icon-on:active {
+  transform: scale(0.8);
+  transition: all 200ms ease;
+}
+
+@keyframes on {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

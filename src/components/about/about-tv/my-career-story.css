@@ -1,0 +1,156 @@
+.my-story-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.menu {
+  max-width: 100%;
+  padding: 0px 20px;
+}
+
+.top-components {
+  margin-left: 179px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.me-pixeled-career {
+  width: 170px;
+  height: 170px;
+  margin: -3px 5px 15px;
+}
+
+.me-pixel-art {
+  width: 170px;
+  height: 170px;
+  margin: -3px 5px 15px;
+}
+
+.dialog-box {
+  border-radius: 25px 12px 25px 0px;
+  border: 2px solid #fff;
+  padding: 4px;
+  background-color: #000;
+  width: 170px;
+  max-width: 170px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 100px;
+  animation: up 400ms cubic-bezier(1, 0.03, 0.7, 1.03) ;
+}
+
+@keyframes up {
+  0% { transform: scale(0.1); }
+  100% { transform: scale(1); }
+}
+
+.bottom-components {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.start-button {
+  background-color: rgb(0, 128, 0);
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.start-button:hover {
+  background-color: rgb(0, 154, 0);
+  transition: all 130ms ease;
+}
+
+.start-button:active {
+  transform: scale(0.9);
+  transition: none;
+}
+
+.back-button {
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  width: 100px;
+  max-width: 100%;
+  background: #031d47;
+  margin: 7px;
+}
+
+.back-button:active {
+  transform: scale(0.9);
+}
+
+.start {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 940px) {
+
+  .my-story-box {
+    background-image: url('../../../images/batthern.png');
+    background-color: #152a6e;
+    animation: light-on 300ms forwards;
+  }
+
+  @keyframes light-on {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+  }
+
+  .top-components {
+    margin-top: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 790px) {
+
+  .top-components {
+    margin-left: 15px;
+  }
+
+  .dialog-box {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+
+  .top-components {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+
+  .me-pixeled-career {
+    width: 132px;
+    height: 132px;
+    margin: 0px;
+  }
+
+  .me-pixel-art {
+    width: 132px;
+    height: 132px;
+    margin: 0px;
+  }
+
+  .dialog-box {
+    margin-left: 0px;
+    border-radius: 0px;
+  }
+}

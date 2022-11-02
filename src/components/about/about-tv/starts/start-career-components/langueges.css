@@ -1,0 +1,87 @@
+.languege-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: on 400ms linear;
+}
+
+.flag-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  height: 96px;
+  width: 96px;
+  max-width: 100%;
+  animation: on 400ms linear;
+}
+
+.flag-icon {
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.15);
+}
+
+.flag-icon:active {
+  transform: scale(1);
+}
+
+/* Icon with problem of resolution! */
+.eng {
+  transform: scale(1.05);
+}
+
+.eng:hover {
+  transform: scale(1.25);
+}
+
+.eng:active {
+  transform: scale(1.05);
+}
+
+.text-lang {
+  font-size: 15px;
+  animation: on 400ms linear;
+  cursor: pointer;
+}
+
+.text-lang:hover {
+  color: rgb(0, 255, 251);
+  transition: all 150ms ease;
+}
+
+.text-lang:active {
+  transform: scale(0.8);
+  transition: all 200ms ease;
+}
+
+.all-off {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  
+  .flag-box {
+    height: 78px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  
+  .flag-box {
+    width: 87px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  
+  .flag-box {
+    height: 75px;
+    width: 80px;
+  }
+}

@@ -1,0 +1,52 @@
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 65px;
+  width: 65px;
+  margin: 5px;
+}
+
+.courses-ico {
+  font-size: 30px;
+  cursor: pointer;
+  animation: on 400ms linear;
+}
+
+.courses-ico:hover {
+  transform: scale(1.1);
+  color: rgb(0, 255, 251);
+  transition: all 150ms ease;
+}
+
+.courses-ico:active {
+  transform: scale(0.9);
+  transition: all 200ms ease;
+}
+
+.text-course {
+  font-size: 15px;
+  animation: on 400ms linear;
+  cursor: pointer;
+}
+
+.text-course:hover {
+  color: rgb(0, 255, 251);
+  transition: all 150ms ease;
+}
+
+.text-course:active {
+  transform: scale(0.9);
+  transition: all 200ms ease;
+}
+
+.course-off {
+  display: none;
+}
+
+@media screen and (max-width: 310px) {
+  .course {
+    height: 50px;
+  }
+}

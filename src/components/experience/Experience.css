@@ -1,0 +1,166 @@
+.experience-me {
+  margin: 50px 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.experience-me h5 {
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.experience-me h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4db5ffac;
+}
+
+.experience-box {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 40px 0px;
+  gap: 1.5rem;
+  /* border: 2px solid #fff; */
+  padding: 20px;
+  user-select: none;
+}
+
+
+.content-card-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 420px;
+  height: 371px;
+  align-self: center;
+  margin: 30px 15px;
+  /* border: 2px solid #fff; */
+}
+
+.card {
+  color: #00041f;
+  box-sizing: border-box;
+  display: flex;
+  background-color: #4db5ffac;
+  width: 150px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+.card:hover {
+  background: transparent;
+  color: #4db5ffac;
+  cursor: pointer;
+  transition: all ease 250ms;
+  border: 2px solid #4db5ffac;
+}
+
+.card h5 {
+  font-weight: 500;
+}
+
+
+
+.card-icon {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 650px) {
+
+  .content-card-box {
+    height: 325px;
+    margin: 20px 40px;
+  }
+
+  .card-box {
+    flex-direction: row;
+    gap: 0.9rem;
+  }
+
+  .card {
+    height: 87px;
+    width: 100px;
+  }
+
+  .card-icon {
+    font-size: 13px;
+  }
+
+  .card small {
+    font-size: 9px;
+    height: 1px;
+  }
+
+  .card h5 {
+    font-size: 10px;;
+    height: 18px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .content-card-box {
+    height: 240px;
+    margin: 40px 20px;
+    align-items: center;
+  }
+
+  .card-box {
+    padding: 10px;
+    gap: 0.5rem;
+  }
+
+  .card {
+    height: 87px;
+    width: 88px;
+  }
+
+  .card h5 {
+    font-size: 12px;
+  }
+
+  .card small {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+
+  .card-box {
+    gap: 0.4rem;
+    padding: 3px;
+  }
+
+  .card {
+    height: 84px;
+    width: 85px
+  }
+
+  .card small {
+    font-size: 7px;
+  }
+}

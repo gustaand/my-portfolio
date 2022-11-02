@@ -1,0 +1,120 @@
+.works-div {
+  font-size: 20px;
+  font-weight: 200;
+  color: #8acdfe;
+  animation: jump 300ms linear;
+  padding: 25px;
+}
+
+.projects-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: jump 300ms linear;
+}
+
+.project-1 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.247);
+  height: 131px;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  opacity: 0.4;
+  border-radius: 1.5rem;
+  border: 2px solid transparent;
+  user-select: none;
+}
+
+.project-1:hover {
+  color: #8acdfe;
+  background-color: #00041f;
+  border: 2px solid #8acdfe;
+  transition: all 400ms ease;
+}
+
+
+.experience-div {
+  animation: jump 300ms linear;
+}
+
+.experience-icon {
+  font-size: 61px;
+  margin: 20px;
+}
+
+/*skills icons*/
+
+.ico-html {
+  color: #f1662b;
+}
+.ico-css {
+  color: #2992c5;
+}
+.ico-js {
+  color: #e5a32b;
+}
+.ico-react {
+  color: #61dbfb;
+}
+.ico-gatsby {
+  color: #4575ef;
+}
+.ico-node {
+  color: #83cd29;
+}
+.ico-py {
+  color: #221fc6;
+}
+.ico-ql {
+  color: rgb(250, 137, 137);
+}
+
+@keyframes jump {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  
+  .project-1 {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .experience-div {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+  .experience-icon{
+    font-size: 40px;
+  }
+  .projects-div,
+  .clients-div
+  {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .works-div {
+    padding: 5px;
+  }
+}

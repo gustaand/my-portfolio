@@ -1,0 +1,255 @@
+.about-me-presentation {
+  display:flex ;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 20px 55px;
+  padding: 30px;
+}
+
+.about-me-presentation h5 {
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.about-me-presentation h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #4db5ffac;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px; */
+  margin: 10px 65px;
+  /* border: 2px solid #fff; */
+}
+
+.tv-box {
+  display: flex;
+  padding: 35px 35px 20px;
+  height: 450px;
+  width: 835px;
+  border: 4px solid #fff;
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.tv-glass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 765px;
+  border: 4px solid #fff;
+  border-radius: 5%;
+  margin: 5px;
+  animation: tv-on 500ms forwards;
+  max-width: 100%;
+  overflow: auto;
+}
+
+@keyframes tv-on {
+  0% { background-color: #fff; }
+  30% { background-color: #fff;}
+  100% { background-color: none; }
+}
+
+.tv-glass-off {
+  height: 350px;
+  width: 765px;
+  border: 4px solid #fff;
+  border-radius: 5%;
+  margin: 5px;
+  animation: tv-off 700ms forwards;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.tv-glass-off div{
+  display: none;
+}
+
+@keyframes tv-off {
+  0% { background-color: #fff; }
+  30% { background-color: #fff9; }
+  100% {background-color: #000; }
+}
+
+.about-screen {
+  display: flex;
+  height: 342px;
+  width: 765px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  background-image: url('../../images/batthern.png');
+}
+
+.my-about {
+  color: #004813;
+  text-align: center;
+  background-color: rgb(0, 233, 210);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  user-select: none;
+  cursor: pointer;
+  transition: all 90ms ease;
+}
+
+.my-about:hover {
+  background-color: rgb(3, 125, 255);
+}
+
+.my-about:active {
+  transform: scale(0.9);
+  transition: none;
+}
+
+.about-section button {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: -12px;
+  font-size: 20px;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tv-power-off {
+  display: flex;
+  margin-top: 10px;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+}
+
+.tv-power-on {
+  background-color: green;
+}
+
+.about-section button:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 700px) {
+
+  .about-section {
+    margin: 10px 20px;
+  }
+
+  .tv-box {
+    border: 2px solid #fff;
+  }
+
+  .tv-glass {
+    border: 2px solid #fff;
+  }
+
+  .tv-glass-off {
+    border: 2px solid #fff;
+  }
+  
+  .about-me-presentation {
+    margin: 0 0 25px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-screen {
+    padding: 100px 1px;
+  }
+
+  .my-about {
+    padding: 6px;
+  }
+  
+  .tv-box {
+    padding: 8px 15px 3px;
+    border-radius: 15%;
+  }
+
+  .tv-glass {
+    height: 365px;
+    border-radius: 10%;
+  }
+
+  .tv-glass-off {
+    height: 365px;
+    border-radius: 10%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .tv-glass {
+    border-radius: 3%;
+  }
+
+  .tv-glass-off {
+    border-radius: 3%;
+  }
+}
+
+/*My About Box*/
+
+.career-box {
+  padding: 15px;
+  max-width: 100%;
+  height: 342px;
+  width: 760px;
+  /* border-radius: 4%; */
+  background-image: url('../../images/batthern.png');
+  background-color: #152a6e;
+  user-select: none;
+  animation: light 300ms forwards;
+}
+
+.story-box {
+  padding: 15px;
+  max-width: 100%;
+  height: 342px;
+  width: 760px;
+  background-image: url('../../images/batthern.png');
+  background-color: #152a6e;
+  user-select: none;
+  animation: light 300ms forwards;
+}
+
+@keyframes light {
+  0% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@media screen and (max-width: 940px) {
+  
+  .career-box {
+    padding: 0;
+  }
+ 
+  .story-box {
+    padding: 0px;;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .career-box {
+    height: 361px;
+  }
+
+  .story-box {
+    height: 361px;
+  }
+}

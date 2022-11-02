@@ -1,0 +1,94 @@
+.start-career-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.my-career-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.career-icon-box {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.155);
+  padding: 2.5px;
+}
+
+.career-icon {
+  font-size: 55px;
+  color: rgb(123, 174, 251);
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.career-icon:hover {
+  transform: scale(1.1);
+  transition: all 150ms ease;
+}
+
+.career-icon:active {
+  color: rgb(0, 255, 251);
+  transform: scale(0.8);
+  transition: all 200ms ease;
+}
+
+.career-icon-target {
+  color: rgb(0, 255, 251);
+  transition: all 200ms ease;
+}
+
+.career-icon-target:hover {
+  transform: none;
+}
+
+.career-icon-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 525px;
+  max-width: 100%;
+  height: 190px;
+  text-align: center;
+  margin: 10px 5px;
+}
+
+@media screen and (max-width: 940px) {
+  
+  .career-icon-box {
+    margin-top: 15px;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .career-icon-screen {
+    height: 220px;
+    margin: 15px 5px;
+  }
+
+  .my-career-icons {
+    flex-direction: column-reverse;
+  }
+
+  .career-icon-box {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    max-width: 95%;
+  }
+
+  .career-icon {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,67 @@
+.hobbies-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-icon {
+  font-size: 55px;
+  margin: 30px;
+  color: #fff;
+}
+
+.back-button-story {
+  border: 2px solid #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  width: 100px;
+  max-width: 100%;
+  background: #031d47;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 112.2px;
+  width: 115px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .back-button-story {
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  .hobbies-box {
+    padding-top: 25px;
+  }
+
+  .icon-box {
+    height: 82px;
+    width: 106px;
+  }
+
+  .back-button-story {
+    margin-top: 25px;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+  
+  .icon-box {
+    height: 80px;
+    width: 99px;
+  }
+}
