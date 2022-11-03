@@ -1,5 +1,5 @@
 import React from 'react';
-import ME from '../../images/me-cut.png'
+import ME from './../../images/me-cut.png'
 import CVcontact from './CVcontact';
 import './header.css';
 import HeaderSocials from './HeaderSocials';
