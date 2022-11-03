@@ -1,6 +1,6 @@
 import React from 'react'
 import './my-career-story.css'
-import MePixelArt from '../../../images/me-pixel-art.png'
+import MePixelArt from './../../../images/me-pixel-art.png'
 import StartStory from './starts/StartStory'
 import { useState } from 'react'
 
