@@ -73,6 +73,24 @@
 .ico-ql {
   color: rgb(250, 137, 137);
 }
+.ico-strapi {
+  color: rgb(135, 111, 242);
+}
+.ico-cont {
+  color: rgb(84, 104, 255);
+}
+.ico-mui {
+  color: rgb(0, 129, 203);
+}
+.ico-styled {
+  color: rgb(221, 111, 179);
+}
+.ico-redux {
+  color: rgb(119, 73, 189);
+}
+.ico-wp {
+  color: rgb(27, 118, 156);
+}
 
 @keyframes jump {
   0% {

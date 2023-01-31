@@ -1,11 +1,11 @@
 import './Experience.css';
-import {FaAward} from 'react-icons/fa';
-import {FiUsers} from 'react-icons/fi';
+import { BiCodeAlt } from 'react-icons/bi';
+import { VscJson } from 'react-icons/vsc';
 import {VscFolderOpened} from 'react-icons/vsc';
 import { useState } from 'react';
-import Skills from './cards-components/Skills';
+import Frontend from './cards-components/Frontend';
 import Projects from './cards-components/Projects';
-import Works from './cards-components/Works';
+import Backend from './cards-components/Backend';
 
 
 const Experience = ()=> {
@@ -14,17 +14,17 @@ const Experience = ()=> {
 
   const Card = ()=> {
     switch (choice) {
-      case 'skills':
-        return <Skills />;
+      case 'front':
+        return <Frontend />;
 
-      case 'works':
-        return <Works />;
+      case 'back':
+        return <Backend />;
     
       case 'projects':
         return <Projects />;
         
       default:
-        return <Skills />;
+        return <Frontend />;
     }
   }
 
@@ -43,16 +43,16 @@ const Experience = ()=> {
                 
         <div className='card-box'>
 
-          <button className='card' onClick={()=> setChoice('skills')}>
-              <FaAward className='card-icon' />
-              <h5>Skills</h5>
-              <small>0.8 Years</small>
+          <button className='card' onClick={()=> setChoice('front')}>
+              <BiCodeAlt className='card-icon' />
+              <h5>Frontend</h5>
+              <small>1.2 Years</small>
           </button>
 
-          <button className='card' onClick={()=> setChoice('works')}>
-            <FiUsers className='card-icon' />
-            <h5>Works</h5>
-            <small>6 works</small>
+          <button className='card' onClick={()=> setChoice('back')}>
+            <VscJson className='card-icon' />
+            <h5>Backend</h5>
+            <small>0.8 Years</small>
           </button>
 
           <button className='card' onClick={()=> setChoice('projects')}>
