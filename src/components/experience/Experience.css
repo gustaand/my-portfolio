@@ -45,11 +45,16 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 420px;
-  height: 371px;
+  width: 620px;
   align-self: center;
-  margin: 30px 15px;
+  margin: 15px;
   /* border: 2px solid #fff; */
+}
+
+@media screen and (max-width: 840px) {
+  .content-card-box {
+    width: 520px;
+  }
 }
 
 .card {
@@ -64,6 +69,7 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid transparent;
+  gap: .8rem;
 }
 
 .card:active {
@@ -91,7 +97,6 @@
 @media screen and (max-width: 650px) {
 
   .content-card-box {
-    height: 325px;
     margin: 20px 40px;
   }
 
@@ -115,7 +120,8 @@
   }
 
   .card h5 {
-    font-size: 10px;;
+    font-size: 10px;
+    ;
     height: 18px;
   }
 }
@@ -123,7 +129,6 @@
 @media screen and (max-width: 380px) {
 
   .content-card-box {
-    height: 240px;
     margin: 40px 20px;
     align-items: center;
   }

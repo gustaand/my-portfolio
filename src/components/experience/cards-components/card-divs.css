@@ -7,36 +7,42 @@
 }
 
 .projects-div {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  animation: jump 300ms linear;
 }
 
 .project-1 {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.247);
-  height: 131px;
-  width: 120px;
-  padding: 10px;
-  margin: 10px;
-  font-size: 20px;
-  opacity: 0.4;
-  border-radius: 1.5rem;
-  border: 2px solid transparent;
-  user-select: none;
+  box-sizing: border-box;
+  margin: 10px 5px;
 }
 
-.project-1:hover {
-  color: #8acdfe;
-  background-color: #00041f;
-  border: 2px solid #8acdfe;
-  transition: all 400ms ease;
+.project-1 img {
+  height: 200px;
+  width: 300px;
+  filter: opacity(1);
+  transition: all ease 300ms;
+  border-radius: 20px;
 }
 
+.project-1 img:hover {
+  transform: scale(0.98);
+  filter: opacity(0.8);
+}
+
+@media screen and (max-width: 840px) {
+  .project-1 img {
+    height: 150px;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .project-1 img {
+    height: 250px;
+    width: 320px;
+  }
+}
 
 .experience-div {
   animation: jump 300ms linear;
@@ -52,65 +58,84 @@
 .ico-html {
   color: #f1662b;
 }
+
 .ico-css {
   color: #2992c5;
 }
+
 .ico-js {
   color: #e5a32b;
 }
+
 .ico-react {
   color: #61dbfb;
 }
+
 .ico-gatsby {
   color: #4575ef;
 }
+
 .ico-node {
   color: #83cd29;
 }
+
 .ico-py {
   color: #221fc6;
 }
+
 .ico-ql {
   color: rgb(250, 137, 137);
 }
+
 .ico-strapi {
   color: rgb(135, 111, 242);
 }
+
 .ico-cont {
   color: rgb(84, 104, 255);
 }
+
 .ico-mui {
   color: rgb(0, 129, 203);
 }
+
 .ico-styled {
   color: rgb(221, 111, 179);
 }
+
 .ico-redux {
   color: rgb(119, 73, 189);
 }
+
 .ico-wp {
   color: rgb(27, 118, 156);
+}
+
+.ico-db {
+  color: rgb(7, 171, 79);
+}
+
+.ico-sql {
+  color: rgb(1, 113, 165);
+}
+
+.ico-prisma {
+  color: rgb(5, 107, 165);
 }
 
 @keyframes jump {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-@media screen and (max-width: 750px) {
-  
-  .project-1 {
-    height: 100px;
-    width: 100px;
-  }
-}
 
 @media screen and (max-width: 480px) {
-  
+
   .experience-div {
     align-items: center;
     flex-wrap: wrap;
@@ -121,12 +146,12 @@
 }
 
 @media screen and (max-width: 380px) {
-  .experience-icon{
+  .experience-icon {
     font-size: 40px;
   }
+
   .projects-div,
-  .clients-div
-  {
+  .clients-div {
     font-size: 12px;
   }
 }
