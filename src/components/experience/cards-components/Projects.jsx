@@ -15,7 +15,7 @@ const Projects = () => {
       </a>
 
 
-      <a className='project-1' href="https://appveterinary.netlify.app/" rel="noreferrer" target='_blank'>
+      <a className='project-1' href="https://ecommerce-pc-front.vercel.app/" rel="noreferrer" target='_blank'>
         <img src={ecommerce} alt="app ecommerce" />
       </a>
 
@@ -25,7 +25,7 @@ const Projects = () => {
       </a>
 
 
-      <a className='project-1' href="https://ordering-screen.vercel.app/" rel="noreferrer" target='_blank'>
+      <a className='project-1' href="https://rpg-city-management.vercel.app/" rel="noreferrer" target='_blank'>
         <img src={city} alt="app city management" />
       </a>
 
